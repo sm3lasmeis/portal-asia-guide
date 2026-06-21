@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>华体会 · 引导页 / 简明说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf6f0;
+      font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+      line-height: 1.75;
+      color: #2e241f;
+      padding: 2rem 1.2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrap {
+      max-width: 780px;
+      width: 100%;
+      background: #fffcf8;
+      padding: 2.8rem 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(90, 60, 40, 0.05);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      border-left: 6px solid #b38b6d;
+      padding-left: 1rem;
+      margin-bottom: 0.4rem;
+      color: #2a1e16;
+    }
+
+    .byline {
+      font-size: 0.92rem;
+      color: #7a6b5f;
+      margin-bottom: 2rem;
+      font-style: italic;
+      border-bottom: 1px solid #e6dbd1;
+      padding-bottom: 0.8rem;
+    }
+
+    .excerpt {
+      font-size: 1.1rem;
+      background: #f0ebe4;
+      padding: 1.6rem 2rem;
+      border-radius: 12px;
+      margin: 1.8rem 0 2.4rem 0;
+      color: #3b2d24;
+      border-left: 4px solid #b38b6d;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .excerpt strong {
+      font-weight: 600;
+      color: #1f1410;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      text-indent: 2em;
+      font-size: 1.02rem;
+    }
+
+    p.no-indent {
+      text-indent: 0;
+    }
+
+    .pull-quote {
+      margin: 2rem 0 2rem 2rem;
+      padding: 1.2rem 2rem 1.2rem 1.8rem;
+      background: #f6f0e9;
+      border-radius: 20px 8px 8px 20px;
+      border-left: 8px solid #a98467;
+      font-size: 1.05rem;
+      color: #34271e;
+      font-style: italic;
+      text-indent: 0;
+      box-shadow: 0 1px 4px rgba(100, 70, 40, 0.05);
+    }
+
+    .pull-quote:before {
+      content: "❝ ";
+      color: #a98467;
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-right: 4px;
+    }
+
+    .insight-box {
+      background: #eee7df;
+      padding: 1.6rem 2rem;
+      border-radius: 24px;
+      margin: 2.4rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1rem;
+      border: 1px solid #dbcfc2;
+    }
+
+    .insight-box span {
+      display: inline-block;
+      background: #dacfc1;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      color: #2f1f16;
+      letter-spacing: 0.4px;
+      font-weight: 500;
+    }
+
+    .insight-box p {
+      margin: 0.2rem 0 0 0;
+      text-indent: 0;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .faq-mini {
+      background: transparent;
+      margin: 2.4rem 0 1.8rem 0;
+      border-top: 1px dashed #dacfc1;
+      padding-top: 1.6rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      color: #4b3a2d;
+      display: block;
+      margin-bottom: 0.2rem;
+      font-size: 1rem;
+    }
+
+    .faq-a {
+      padding-left: 1.2rem;
+      color: #4a3d33;
+      border-left: 3px solid #dccfc2;
+      margin-top: 0.1rem;
+      text-indent: 0;
+    }
+
+    .signature-link {
+      margin-top: 2rem;
+      padding-top: 1.6rem;
+      border-top: 2px solid #e6dbd1;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    .signature-link a {
+      color: #7b5f4a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: border 0.2s;
+    }
+
+    .signature-link a:hover {
+      border-bottom-color: #b38b6d;
+    }
+
+    small.footer-note {
+      display: block;
+      margin-top: 2.6rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #ab9a8b;
+      border-top: 1px solid #ede6dc;
+      padding-top: 1.4rem;
+    }
+
+    /* 响应 */
+    @media (max-width: 580px) {
+      body { padding: 1rem 0.8rem; }
+      .page-wrap { padding: 1.8rem 1.2rem; }
+      h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+      .excerpt { padding: 1.2rem 1.2rem; }
+      .pull-quote { margin-left: 0.6rem; padding: 1rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <h1>华体会 · 从名字开始辨认</h1>
+  <div class="byline">一个小型导览 · 关于你正在看的这个站点</div>
+
+  <p class="no-indent excerpt">
+    <strong>如果你刚刚遇到 portal-asia-hth.com，第一眼可能会想：这是一个什么类型的网站？</strong><br>
+    简洁地说，它是一个围绕「体育与泛娱乐体验」的聚合服务界面，<strong>华体会</strong> 是出现在该平台上的品牌标识之一，也是许多人进入这个站点的起点。
+  </p>
+
+  <p>打开一个陌生网站，我们最常做的事是：快速定位“它到底提供什么”。这里的首页没有密集的跳转弹窗，也没有令人困惑的广告堆叠，整体布局偏向工具型入口 —— 但这不代表它功能单薄。相反，<strong>华体会</strong> 作为其中的核心单元，常常关联着赛事资讯、实时动态以及社群交互模块，并且在不同地区版本中有细微的功能侧重。</p>
+
+  <p>从使用场景来说，如果你偏好在一个相对干净的界面里浏览运动类内容或参与轻互动，那么这里或许能节省你反复切换应用的时间。值得注意的是，网站本身并未刻意夸大自己的资源储备，也没有使用刺激性的催促文案，调性上更接近“自助探索”的风格，把选择权留给访问者。</p>
+
+  <div class="pull-quote">
+    识别一个平台最直接的方式，不是看它宣称自己是什么，而是看它默认提供了什么。<br>
+    —— 在这里，默认就是一种克制。
+  </div>
+
+  <p>我也注意到，<strong>华体会</strong> 在首页上的位置既不刻意突出，也不被隐藏；它作为导航中的一个自然锚点，和周边功能并列陈列。这种设计意味着它并不是唯一的主角，而是整个服务生态中的一块拼图。对于只想快速确认用途的你来说，可以把它理解为一个“特色频道”，而不是网站的代名词。</p>
+
+  <div class="insight-box">
+    <span>📌 快速识别</span>
+    <span>⚙️ 功能导向</span>
+    <span>🧩 模块化</span>
+    <p>portal-asia-hth.com 更像一个集合面板，而 <strong>华体会</strong> 是其中一块内容区域。两者不可直接划等号，但通过华体会可以感知到整个站点的内容气质。</p>
+  </div>
+
+  <p>如果你想知道平台具体包含哪些功能模块，不妨直接浏览它的主要菜单栏 —— 你会发现赛事列表、趋势话题、以及一些个性化的推荐卡片。整体信息架构偏向“先浏览后决策”，没有强制注册或下载的栏杆，这一点对只是想初步了解的用户相当友好。</p>
+
+  <div class="faq-mini">
+    <div class="faq-item">
+      <span class="faq-q">问：网站是专门为华体会设立的吗？</span>
+      <p class="faq-a">不完全是。它更像一个整合入口，<strong>华体会</strong> 是其中的特色部分，但站点同时也承载其他内容区块。</p>
+    </div>
+    <div class="faq-item">
+      <span class="faq-q">问：第一次访问需要做什么准备？</span>
+      <p class="faq-a">不需要特殊配置。页面加载快速，浏览逻辑直观，所有主要信息都在可见区域内。</p>
+    </div>
+  </div>
+
+  <p>最后，若你希望直接了解 <strong>华体会</strong> 相关的内容，可以通过下方链接直接定位到它在站内的位置。再次提醒：这个网站整体偏向信息展示与轻交互，没有隐藏收费陷阱，也没有浮夸的宣传语。保持平常心浏览即可。</p>
+
+  <div class="signature-link">
+    <span>→ 前往 </span><a href="https://portal-asia-hth.com">华体会</a><span> 了解详情 · 或从首页自行探索</span>
+  </div>
+
+  <small class="footer-note">本页仅为风格说明，不构成任何功能承诺 · 实际内容以站点为准</small>
+</div>
+</body>
+</html>
